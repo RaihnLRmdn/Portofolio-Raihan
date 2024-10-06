@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-left: 1.5rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.navbar a {
+  margin-left: 1.5rem;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #007acc;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-content h3 span {
+  color: #a42424;
+}
+
+.home-content p {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  color: #666;
+}
+
+.social-media {
+  margin-top: 1.5rem;
+}
+
+.social-media a {
+  color: #333;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007acc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007acc;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005f99;
+}
+
+.about {
+  padding: 4rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.skills {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.skills h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skill-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.image h2 {
+  color: #fff;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact form div {
+  margin-bottom: 1rem;
+}
+
+.contact label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.contact textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #005f99;
+}
+
+footer {
+  padding: 2rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer-links a {
+  margin-left: 0.5rem;
+  color: #666;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007acc;
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .about p,
+  .contact form {
+    font-size: 0.9rem;
+  }
+
+  .header {
+    padding: 10px 5%;
+    backdrop-filter: blur(4px);
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
